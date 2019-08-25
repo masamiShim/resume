@@ -1,0 +1,12 @@
+body {
+  font: 14px/1.4 helvetica, arial, sans-serif;
+  font-size: 0.9rem;
+  color: #393939;
+  letter-spacing: 0.1rem;
+}
+.c-content {
+  width: 80%;
+}
+.l-content-wrapper {
+  margin: 0 auto 0 auto;
+}
