@@ -1,12 +1,49 @@
 body {
-  font: 14px/1.4 helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font: 14px/1.4 -apple-system, BlinkMacSystemFont, "游ゴシック体", YuGothic, "Yu Gothic M", "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.9rem;
-  color: #393939;
+  color: #565656;
   letter-spacing: 0.1rem;
+  background-color: #fdfdfd;
+}
+.header {
+  border-bottom: 2px dotted #ef7d3c;
+  height: 80px;
+}
+.header-title {
+  color: #263165;
+}
+.l-header-title {
+  margin-bottom: 1.5em;
+  margin-left: 10%;
+  line-height: 80px;
 }
 .c-content {
   width: 80%;
 }
 .l-content-wrapper {
   margin: 0 auto 0 auto;
+}
+.c-section-title {
+  border-bottom: 1px solid #ef7d3c;
+  padding: 0 0.5rem;
+}
+.l-section-title {
+  margin-bottom: 1.2rem;
+}
+.l-info-list {
+  margin-bottom: 2.5rem;
+}
+.c-info-list__title {
+  font-weight: bold;
+}
+.l-info-list__title {
+  margin-bottom: 0.5em;
+}
+.l-info-list__item {
+  line-height: 2em;
+}
+.l-info-list__item:last-child {
+  margin-bottom: 1em;
 }

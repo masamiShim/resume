@@ -7,6 +7,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const publishDir = 'docs'
 
 const app = {
+  watch: true,
+  watchOptions: {
+    poll: 1000,
+  },
   entry: 'src/index.ejs',
   output: {
     filename: '[name]',
@@ -37,7 +41,7 @@ const app = {
     new CopyWebpackPlugin(
       [{ from: `${__dirname}/js/**/*`, to: `${__dirname}/${publishDir}/js/` }],
       { context: 'js/' })
-  ]
+  ],
 }
 
 module.exports = app

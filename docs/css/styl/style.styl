@@ -1,20 +1,41 @@
-fonts = helvetica, arial, sans-serif
+fonts = -apple-system, BlinkMacSystemFont, "游ゴシック体", YuGothic, "Yu Gothic M", "游ゴシック Medium", "Yu Gothic Medium", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 font-size-base = 0.9rem
 font-size-large = 1.5rem
 font-size-small = 0.8rem
 
-base-font-color = #393939
-base-color-1 = red
-base-color-2 = blue
-base-color-3 = yellow
-base-color-4 = gray
+base-font-color = #565656
+bg-color = #FDFDFD
+accent-color__ivory = #F2E0D7
+accent-color__orange = #EF7D3C
+accent-color__navy = #263165
+accent-color__green = #60955F
 
 base-wrapper-width = 80%
+base-wrapper-margin = ((100 - 80) / 2)%
+header-height = 80px
+
+base-space = 1.5em
+
+
 body
+  margin: 0
+  padding: 0
   font 14px/1.4 fonts
   font-size font-size-base
   color base-font-color
   letter-spacing 0.1rem
+  background-color: bg-color
+
+
+.header
+  border-bottom: 2px dotted accent-color__orange
+  height: header-height
+.header-title
+  color: accent-color__navy
+.l-header-title
+  margin-bottom: base-space
+  margin-left: base-wrapper-margin
+  line-height : header-height
 
 .c-content
   width base-wrapper-width
@@ -22,3 +43,23 @@ body
 .l-content-wrapper
   margin: 0 auto 0 auto
 
+.c-section-title
+  border-bottom: 1px solid accent-color__orange
+  padding: 0 0.5rem
+
+.l-section-title
+  margin-bottom: 1.2rem
+
+.l-info-list
+  margin-bottom: 2.5rem
+
+.c-info-list__title
+  font-weight: bold
+
+.l-info-list__title
+  margin-bottom: 0.5em
+
+.l-info-list__item
+  line-height : 2em
+  &:last-child
+    margin-bottom: 1em
